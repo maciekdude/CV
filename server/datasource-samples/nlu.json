@@ -1,0 +1,45 @@
+{
+  "name": "nlu",
+  "debug": true,
+  "operations": [
+    {
+      "template": {
+        "method": "POST",
+        "url": "${NLU_API_ANALYZE_URL}",
+        "options": {
+          "auth": {
+            "username": "${NLU_API_USER}",
+            "password": "${NLU_API_PASSWORD}"
+          },
+          "body": {}
+        },
+        "query": {
+          "version": "${NLU_API_VERSION}"
+        },
+        "body": {
+          "text": "{text='':string}",
+          "language": "en",
+          "features": {
+            "entities": {},
+            "concepts": {},
+            "keywords": {},
+            "relations": {},
+            "emotion": {},
+            "sentiment": {},
+            "semantic_roles": {}
+          }
+        }
+      },
+      "functions": {
+        "analyze": [
+          {
+            "name": "text",
+            "source": "form"
+          }
+        ]
+      }
+    }
+  ],
+  "crud": false,
+  "connector": "rest"
+}

@@ -1,0 +1,14 @@
+{
+  "CLOUDANT_CONNECTION_URL": {"expr": "Cloudant.*", "field": "credentials.url"},
+  "CLOUDANT_DB_NAME": "a-database-name",
+  "CONVERSATION_API_URL": {"expr": "Conversation.*", "field": "credentials.url", "append": "/v1/workspaces/.../message?version=2016-09-20"},
+  "CONVERSATION_API_USER": {"expr": "Conversation.*", "field": "credentials.username"},
+  "CONVERSATION_API_PASSWORD": {"expr": "Conversation.*", "field": "credentials.password"},
+  "STT_API_USER": {"expr": "Speech to Text.*", "field": "credentials.username"},
+  "STT_API_PASSWORD": {"expr": "Speech to Text.*", "field": "credentials.password"},
+  "STT_API_URL": {"expr": "Speech to Text.*", "field": "credentials.url"},
+  "NLU_API_USER": {"expr": "Natural Language Understanding.*", "field": "credentials.username"},
+  "NLU_API_PASSWORD": {"expr": "Natural Language Understanding.*", "field": "credentials.password"},
+  "NLU_API_ANALYZE_URL": {"expr": "Natural Language Understanding.*", "field": "credentials.url", "append": "/v1/analyze"},
+  "NLU_API_VERSION": "2017-02-27"
+}

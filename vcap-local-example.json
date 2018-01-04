@@ -1,0 +1,64 @@
+{
+  "cloudantNoSQLDB": [{
+    "credentials": {
+      "username": "",
+      "password": "",
+      "host": "",
+      "port": 443,
+      "url": ""
+    },
+    "syslog_drain_url": null,
+    "label": "cloudantNoSQLDB",
+    "provider": null,
+    "plan": "Lite",
+    "name": "Cloudant NoSQL DB-ak",
+    "tags": [
+      "data_management",
+      "ibm_created",
+      "ibm_dedicated_public"
+    ]
+  }],
+  "conversation": [{
+    "credentials": {
+      "url": "https://gateway.watsonplatform.net/conversation/api",
+      "password": "",
+      "username": ""
+    },
+    "syslog_drain_url": null,
+    "label": "conversation",
+    "provider": null,
+    "plan": "free",
+    "name": "Conversation-n0",
+    "tags": [
+      "watson",
+      "ibm_created"
+    ]
+  }],
+  "SpeechToText": [{
+    "credentials": {
+      "url": "https://stream.watsonplatform.net/speech-to-text/api",
+      "username": "",
+      "password": ""
+    },
+    "name": "Speech to Text-default",
+    "label": "speech_to_text"
+  }],
+  "natural-language-understanding": [
+    {
+      "credentials": {
+        "url": "https://gateway.watsonplatform.net/natural-language-understanding/api",
+        "username": "",
+        "password": ""
+      },
+      "syslog_drain_url": null,
+      "label": "natural-language-understanding",
+      "provider": null,
+      "plan": "free",
+      "name": "Natural Language Understanding-starter-app",
+      "tags": [
+        "watson",
+        "ibm_created"
+      ]
+    }
+  ]
+}

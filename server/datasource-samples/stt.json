@@ -1,0 +1,21 @@
+{
+  "name": "watson-stt-token",
+  "crud": false,
+  "connector": "rest",
+  "operations": [
+    {
+      "template": {
+        "method": "GET",
+        "url": "https://stream.watsonplatform.net/authorization/api/v1/token?url=https://stream.watsonplatform.net/speech-to-text/api"
+      },
+      "responsePath": "$",
+      "functions": {
+        "retrieve": []
+      }
+    }
+  ],
+  "auth": {
+    "user": "${STT_API_USER}",
+    "password": "${STT_API_PASSWORD}"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "url": "${CLOUDANT_CONNECTION_URL}",
+  "database": "${CLOUDANT_DB_NAME}",
+  "name": "cloudant",
+  "connector": "cloudant"
+}
